@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <base href="/pwa-pedro/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anotações</title>
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <script src="js/object.observe.polyfill.js"></script>
+    <script src="js/array.observe.polyfill.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Minhas Anotações">
+    <link rel="apple-touch-icon" href="img/icons/icon-152x152.png">
+
+    <meta name="msapplication-TileImage" content="img/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#663399">
+    
+    <meta name="theme-color" content="#663399">
+
+</head>
+<body class="purple darken-4 white-text">
+<header id="header" class="container deep-purple">
+    <h1>Calculo de IMC</h1>
+</header>
+
+<div id="content" class="container deep-purple lighten-3">
+    <h4 id="err"></h4>
+
+    <form id="form-add-note" class="row">
+        <input type="number" placeholder="Peso" class="col-2 white"/>
+        <input type="number" placeholder="Altura" class="col-2 white"/>
+        <button type="button" class="purple darken-4 white-text col-2" onclick="calcular()">Calcular</button>
+    </form>
+
+    <ul id="notes">
+        <li>Nota</li>
+    </ul>
+</div>
+
+<script src="js/object.observe.polyfill.js"></script>
+<script src="js/array.observe.polyfill.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

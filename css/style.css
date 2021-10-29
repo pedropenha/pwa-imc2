@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light');
+
+#header, #form-add-note{
+    margin-bottom: 40px;
+}
+
+#content{
+    padding-bottom: 20px;
+}
+
+#notes li{
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+#notes li:hover{
+    color: whitesmoke;
+    background-color: rebeccapurple;
+}
+
+*{
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -webkit-box-flex-group: 1;
+}
+
+.col-2{
+    flex-grow: 2;
+    -webkit-flex-grow: 2;
+    -webkit-box-flex-group: 2;
+}
+
+h1, p{
+    padding: 20px 0px;
+}
+
+h1{
+    font-size: 2.8em;
+}
+
+h4{
+    color: azure;
+    font-weight: normal;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+p{
+    font-size: 1em;
+}
+
+input{
+    font: inherit;
+    padding: 10px 20px;
+}
+
+/** Muito Pequeno **/
+.container{
+    background-color: orangered;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Pequeno **/
+
+@media(min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+
+    li{
+        margin-left: 5%;
+    }
+}
+
+/** Medio **/
+
+@media(min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+/** Grande **/
+
+@media(min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+/** Muito Grande **/
+
+@media(min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
